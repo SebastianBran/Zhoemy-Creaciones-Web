@@ -1,0 +1,111 @@
+:root {
+    --pd_left: 100px;
+    --pd_right: 100px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*header*/
+
+header {
+    height: 50px;
+    background-color: rgb(251,217,240);
+    padding-left: var(--pd_left);
+    padding-right: var(--pd_right);
+}
+
+nav {
+    display: inline-block;
+}
+
+.link {
+    text-decoration: none;
+    position: absolute;
+    top: 15px;
+    color: gray;
+}
+
+#logo {
+    height: 30px;
+    vertical-align: middle;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 9px;
+    padding-left: 40px;
+}
+
+#name {
+    line-height: 50px;
+    position: absolute;
+    left: 180px;
+}
+
+#we_are {
+    left: 420px;
+}
+
+#products {
+    left: 520px;
+}
+
+#contact {
+    right: 150px;
+}
+
+
+/*main*/
+
+.title {
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+main {
+    background-color: rgba(243,241,234);
+    padding-left: var(--pd_left);
+    padding-right: var(--pd_right);
+    height: 500px;
+}
+
+.paragraph {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.box {
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255,229,187);
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 12%;
+    margin-top: 40px;
+    vertical-align: middle;
+    border-radius: 40px;
+}
+
+#img_marca {
+    display: inline-block;
+    vertical-align: middle;
+    height: 250px;
+    padding-left: 5%;
+    padding-top: 40px;
+}
+
+/*footer*/
+
+footer {
+    text-align: center;
+    background-color: rgb(172,181,193);
+    padding-left: var(--pd_left);
+    padding-left: var(--pd_right);
+    height: 50px;
+    line-height: 50px;
+}
