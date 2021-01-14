@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', 'Roboto', sans-serif;
+}
+
+header, main, footer {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/*header*/
+
+header {
+    height: 40px;
+    background-color: #FBD9F0;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 30px;
+    padding-right: 10px;
+}
+
+#text-logo {
+    display: inline-block;
+    width: 30%;
+    font-weight: bold;
+}
+
+nav {
+    width: 69%;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*main*/
+
+main {
+    background-color: #F3F1EA;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.main-container {
+    height: 330px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-text {
+    height: 250px;
+    width: 250px;
+    background-color: #FFE5BB;
+    border-radius: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#text {
+    padding: 0 10px;
+}
+
+#container-img {
+    display: inline-block;
+}
+
+#marca {
+    width: 250px;
+}
+
+/*footer*/
+
+footer {
+    height: 40px;
+    background-color: #ACB5C1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

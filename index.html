@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
 
     <link rel="apple-touch-icon" sizes="57x57" href="assets/icons">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
@@ -28,29 +28,32 @@
 </head>
 <body>
     <header>
-        <img id="logo" src="/assets/images/knitting.png" alt="logo">
-        <span id="name">Zhoemy creaciones</span>
+        <img src="/assets/images/knitting.svg" alt="logo" id="logo">
+        <span id="text-logo">Zhoemy Creaciones</span>
         <nav>
             <ul>
-                <a class="link" id="we_are" href="#">Nosotros</a>
-                <a class="link" id="products" href="#">Productos</a>
-                <a class="link" id="contact" href="#">Contáctanos</a>
+                <!-- <li class="link"><a href="#">Inicio</a></li> -->
+                <li class="link"><a href="#">Nosotros</a></li>
+                <li class="link"><a href="#">Productos</a></li>
+                <li class="link"><a href="#">Contáctanos</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1 class="title">Nosotros</h1>
-        <div>
-            <div class="box">
-                <p class="paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore tempore nulla nisi earum veritatis porro in laboriosam fugiat debitis consequatur, accusantium iste voluptatibus iure quam incidunt at cupiditate officiis?
+        <h1>Nosotros</h1>
+        <div class="main-container">
+            <div class="container-text">
+                <p id="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, enim aut sequi maiores illo quaerat amet quas modi doloribus eos nesciunt pariatur alias magni deleniti nam reiciendis odit ea magnam.
                 </p>
             </div>
-            <img id="img_marca" src="/assets/images/marca.png" alt="marca">
+           <div id="container-img">
+               <img src="/assets/images/marca.png" alt="marca" id="marca">
+           </div>
         </div>
     </main>
     <footer>
-        <span>Zhoemy creaciones © 2020</span>
+        <span id="copyright">© Zhoemy creaciones 2020</span>
     </footer>
 </body>
 </html>
