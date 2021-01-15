@@ -8,14 +8,14 @@
 }
 
 header, main, footer {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 250px;
+    padding-right: 250px;
 }
 
 /*header*/
 
 header {
-    height: 40px;
+    height: 80px;
     background-color: #FBD9F0;
     display: flex;
     align-items: center;
@@ -30,6 +30,7 @@ header {
     display: inline-block;
     width: 30%;
     font-weight: bold;
+    font-size: 18px;
 }
 
 nav {
@@ -45,7 +46,11 @@ ul {
 }
 
 .link {
-    margin-left: 10px;
+    margin-left: 20px;
+}
+
+.link-item:hover {
+    color: gray;
 }
 
 a {
@@ -60,18 +65,24 @@ main {
 
 h1 {
     text-align: center;
-    padding: 20px 0;
+    padding: 50px 0px 20px;
+    font-size: 40px;
 }
 
 .main-container {
-    height: 330px;
+    height: 490px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.container-text,
+#container-img {
+    margin: 50px;
 }
 
 .container-text {
-    height: 250px;
-    width: 250px;
+    height: 350px;
+    width: 350px;
     background-color: #FFE5BB;
     border-radius: 38px;
     display: flex;
@@ -89,13 +100,13 @@ h1 {
 }
 
 #marca {
-    width: 250px;
+    width: 350px;
 }
 
 /*footer*/
 
 footer {
-    height: 40px;
+    height: 80px;
     background-color: #ACB5C1;
     display: flex;
     align-items: center;
