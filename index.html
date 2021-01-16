@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <!-- <link rel="stylesheet" href="normalize.css"> -->
+    <link rel="stylesheet" href="./css/styles.css">
 
     <link rel="apple-touch-icon" sizes="57x57" href="assets/icons">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
@@ -27,33 +26,43 @@
     <title>Zhoemy</title>
 </head>
 <body>
-    <header>
-        <img src="/assets/images/knitting.svg" alt="logo" id="logo">
-        <span id="text-logo">Zhoemy Creaciones</span>
-        <nav>
-            <ul>
-                <!-- <li class="link"><a href="#">Inicio</a></li> -->
-                <li class="link"><a class="link-item" href="#">Nosotros</a></li>
-                <li class="link"><a class="link-item" href="#">Productos</a></li>
-                <li class="link"><a class="link-item" href="#">Contáctanos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Nosotros</h1>
-        <div class="main-container">
+    <main class="main">
+        <header class="header">
+            <img src="./assets/images/knitting.svg" alt="logo" id="logo">
+            <span id="text-logo">Zhoemy Creaciones</span>
+            <nav>
+                <ul>
+                    <li class="link"><a class="link-item" href="#">Nosotros</a></li>
+                    <li class="link"><a class="link-item" href="#">Productos</a></li>
+                    <li class="link"><a class="link-item" href="#">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="presentation">
             <div class="container-text">
-                <p id="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, enim aut sequi maiores illo quaerat amet quas modi doloribus eos nesciunt pariatur alias magni deleniti nam reiciendis odit ea magnam.
-                </p>
+                <p id="text">Conoce mi <br> trabajo</p>
+                <p id="text-sub">Amor y dedicación</p>
             </div>
             <div id="container-img">
-               <img src="/assets/images/marca.png" alt="marca" id="marca">
+                <img src="./assets/images/marca.png" alt="marca" id="brand">
             </div>
         </div>
+        <div class="galery"> 
+            <h1>Galery</h1>
+        </div>
+        <div class="contact">
+            <p class="contact-title">Contáctame</p>
+            <p class="contact-item">Baltazara Rosa Zapata Coello</p>
+            <p class="contact-item">rositazapata@gmail.com</p>
+            <p class="contact-item">936679602</p>
+        </div>
+        <footer class="footer">
+            <div class="container-icons">
+                <img class="icons" src="./assets/icons/facebook.svg" alt="facebook">
+                <img class="icons" src="./assets/icons/instagram.svg" alt="instagram">
+            </div>
+            <span id="copyright">© Zhoemy creaciones 2021</span>
+        </footer>
     </main>
-    <footer>
-        <span id="copyright">© Zhoemy creaciones 2021</span>
-    </footer>
 </body>
 </html>

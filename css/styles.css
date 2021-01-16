@@ -1,29 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lato', 'Roboto', sans-serif;
+    font-family: 'Lato', 'Roboto', 'PT Serif' sans-serif;
 }
 
-header, main, footer {
+body {
+    background-color: #FFFFFD;
     padding-left: 250px;
     padding-right: 250px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80px auto 250px 300px 150px;
+    grid-template-areas:
+        "header"
+        "presentation"
+        "galery"
+        "contact"
+        "footer";
 }
 
 /*header*/
 
 header {
+    grid-area: header;
     height: 80px;
-    background-color: #FBD9F0;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid black;
 }
 
 #logo {
-    width: 30px;
+    width: 40px;
     padding-right: 10px;
+}
+
+#text-logo,
+.link-item {
+    font-family: 'Lato', 'Roboto', sans-serif;
 }
 
 #text-logo {
@@ -45,32 +65,21 @@ ul {
     justify-content: flex-end;
 }
 
-.link {
-    margin-left: 20px;
-}
-
 .link-item:hover {
     color: gray;
+    border-bottom: 1px solid gray;
 }
 
 a {
     text-decoration: none;
+    margin-left: 20px;
 }
 
 /*main*/
 
-main {
-    background-color: #F3F1EA;
-}
-
-h1 {
-    text-align: center;
-    padding: 50px 0px 20px;
-    font-size: 40px;
-}
-
-.main-container {
-    height: 490px;
+.presentation {
+    grid-area: presentation;
+    height: auto;
     display: flex;
     justify-content: center;
 }
@@ -81,34 +90,94 @@ h1 {
 }
 
 .container-text {
-    height: 350px;
-    width: 350px;
-    background-color: #FFE5BB;
-    border-radius: 38px;
+    padding-top: 30px;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
 }
 
 #text {
-    padding: 0 10px;
+    color: #DBC8BE;
+    font-family: 'PT Serif';
+    font-size: 50px;
+    text-align: left;
+
+    padding-top: 60px;
+    padding-left: 60px;
+}
+
+#text-sub {
+    font-family: 'PT Serif';
+    font-size: 18px;
+    text-align: left;
+
+    padding-left: 60px;
+    padding-top: 30px;
 }
 
 #container-img {
     display: inline-block;
+    padding: 40px;
+    background-color: #FFF6E6;
 }
 
-#marca {
+#brand {
     width: 350px;
+}
+
+/* galery */
+
+.galery {
+    grid-area: galery;
+    border: 1px solid black;
+}
+
+/* contact */
+
+.contact {
+    grid-area: contact;
+    background-color: #DCDFE2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-item,
+.contact-title {
+    padding: 10px;
+}
+
+.contact-title {
+    font-family: 'PT Serif';
+    font-size: 40px;
+}
+
+.contact-item {
+    font-family: 'Lato';
+    color: #47525E;
 }
 
 /*footer*/
 
 footer {
-    height: 80px;
-    background-color: #ACB5C1;
+    grid-area: footer;
+    height: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.container-icons {
+    display: flex;
+}
+
+.icons {
+    width: 25px;
+    padding: 0px 10px;
+}
+
+#copyright {
+    padding-top: 20px;
 }
