@@ -8,22 +8,18 @@
     font-family: 'Lato', 'Roboto', 'PT Serif' sans-serif;
 }
 
-body {
-    background-color: #FFFFFD;
-    padding-left: 250px;
-    padding-right: 250px;
-}
+body { background-color: #FFFFFD; }
 
 .main {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 20% 1fr 20%;
     grid-template-rows: 80px auto 250px 300px 150px;
     grid-template-areas:
-        "header"
-        "presentation"
-        "galery"
-        "contact"
-        "footer";
+        "header header header"
+        ". presentation ."
+        ". galery ."
+        ". contact ."
+        ". footer .";
 }
 
 /*header*/
@@ -33,11 +29,12 @@ header {
     height: 80px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid black;
+    box-shadow:0px 3px 10px #e7e2e7;
 }
 
 #logo {
     width: 40px;
+    padding-left: 250px;
     padding-right: 10px;
 }
 
@@ -56,6 +53,7 @@ header {
 nav {
     width: 69%;
     display: inline-block;
+    padding-right: 250px;
 }
 
 ul {
