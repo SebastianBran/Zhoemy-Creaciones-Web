@@ -5,177 +5,132 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lato', 'Roboto', 'PT Serif' sans-serif;
+    font-family: "Lato", "Roboto", sans-serif;
 }
 
-body { background-color: #FFFFFD; }
-
-.main {
+body { 
+    background-color: #FFFFFD;
     display: grid;
-    grid-template-columns: 20% 1fr 20%;
-    grid-template-rows: 80px auto 250px 300px 150px;
-    grid-template-areas:
-        "header header header"
-        ". presentation ."
-        ". galery ."
-        ". contact ."
-        ". footer .";
+    grid-template-areas:    
+        "header"
+        "presentation";
+    
 }
 
-/*header*/
+/* MENU */
 
-header {
-    grid-area: header;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    box-shadow:0px 3px 10px #e7e2e7;
+#menu ul { list-style: none; }
+
+#menu ul li {
+    text-align: center; 
+    padding-top: 20px;
 }
 
-#logo {
+#menu ul li a { 
+    text-decoration: none; 
+    color: black;
+    font-size: 18px;
+}
+
+#menu {
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    background-color: #f5c577;
+    top: 65px;
+    /* right: -100%; */
+    opacity: 0;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 500ms ease-out;
+}
+
+#menu.active { 
+    opacity: 1;
+    right: 0;
+}
+
+/* HEADER */
+
+#toggle-btn {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    cursor: pointer;
+}
+
+#toggle-btn span {
+    display: block;
     width: 40px;
-    padding-left: 250px;
-    padding-right: 10px;
+    font-size: 28px;
+    text-align: center;
+    color: black;
+    border: none;
 }
 
-#text-logo,
-.link-item {
-    font-family: 'Lato', 'Roboto', sans-serif;
+#header {
+    grid-area: header;
+    display: flex;
+    position: relative;
+    background-color: #FFE4B8;
+    height: 65px;
+    justify-content: center;
+    transition: all 500ms ease-out;
+}
+
+#header.active {
+    background-color: #f5c577;
+}
+
+#img-logo {
+    position: absolute;
+    width: 35px;
+    line-height: 65px;
+    left: 25px;
+    top: 13px;
 }
 
 #text-logo {
-    display: inline-block;
-    width: 30%;
+    left: 80px;
+    line-height: 65px;
+    font-size: 20px;
     font-weight: bold;
-    font-size: 18px;
 }
 
-nav {
-    width: 69%;
-    display: inline-block;
-    padding-right: 250px;
-}
-
-ul {
-    list-style: none;
-    
-    display: flex;
-    justify-content: flex-end;
-}
-
-.link-item:hover {
-    color: gray;
-    border-bottom: 1px solid gray;
-}
-
-a {
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-/*main*/
+/* PRESENTATION */
 
 .presentation {
     grid-area: presentation;
-    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 60%;
+    height: 650px;
+    background-color: #FFE4B8;
+    border-radius: 0px 0px 100% / 15%;
+
+}
+
+#container-img {
     display: flex;
     justify-content: center;
-}
-
-.container-text,
-#container-img {
-    margin: 50px;
-}
-
-.container-text {
-    padding-top: 30px;
-
-    display: flex;
-    flex-direction: column;
-}
-
-#text {
-    color: #DBC8BE;
-    font-family: 'PT Serif';
-    font-size: 50px;
-    text-align: left;
-
-    padding-top: 60px;
-    padding-left: 60px;
-}
-
-#text-sub {
-    font-family: 'PT Serif';
-    font-size: 18px;
-    text-align: left;
-
-    padding-left: 60px;
-    padding-top: 30px;
-}
-
-#container-img {
-    display: inline-block;
-    padding: 40px;
-    background-color: #FFF6E6;
 }
 
 #brand {
-    width: 350px;
+    width: 300px;
+    height: 300px;
 }
 
-/* galery */
-
-.galery {
-    grid-area: galery;
-    border: 1px solid black;
+#text,
+#text-sub {
+    padding-top: 30px;
 }
 
-/* contact */
-
-.contact {
-    grid-area: contact;
-    background-color: #DCDFE2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#text {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
 }
 
-.contact-item,
-.contact-title {
-    padding: 10px;
-}
-
-.contact-title {
-    font-family: 'PT Serif';
-    font-size: 40px;
-}
-
-.contact-item {
-    font-family: 'Lato';
-    color: #47525E;
-}
-
-/*footer*/
-
-footer {
-    grid-area: footer;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-icons {
-    display: flex;
-}
-
-.icons {
-    width: 25px;
-    padding: 0px 10px;
-}
-
-#copyright {
-    padding-top: 20px;
+#text-sub {
+    font-size: 23px;
+    text-align: center;
+    /* color: #3a3939; */
 }
