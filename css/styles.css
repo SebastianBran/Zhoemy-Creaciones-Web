@@ -141,7 +141,7 @@ body {
     position: relative;
     height: 570px;
     display: grid;
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 120px 1fr 80px;
 }
 
 #title-gallery {
@@ -152,7 +152,6 @@ body {
 }
 
 #carousel {
-    position: relative;
     display: grid;
     height: 90%;
     grid-template-columns: 15% 1fr 15%;
@@ -191,7 +190,8 @@ body {
 #see-more {
     display: flex;
     justify-content: center;
-    height: 60px;
+    align-items: center;
+    padding-bottom: 15px;
 }
 
 #see-more p {
@@ -247,6 +247,7 @@ body {
 
 @media (min-width: 950px) {
     /* HEADER */
+
     #header { justify-content: left; }
 
     #header.active { background-color: #FFE4B8; }
