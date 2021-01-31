@@ -1,0 +1,19 @@
+.footer {
+    height: 150px;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #DCDFE2;
+}
+
+.container-icons { display: flex; }
+
+.icons {
+    width: 30px;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+#copyright { padding-top: 20px; }
