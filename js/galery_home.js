@@ -1,8 +1,8 @@
 let images = [
-    "/assets/images/products/1.png",
-    "/assets/images/products/2.png",
-    "/assets/images/products/3.png",
-    "/assets/images/products/4.png"
+    "./assets/images/products/1.png",
+    "./assets/images/products/2.png",
+    "./assets/images/products/3.png",
+    "./assets/images/products/4.png"
 ];
 
 let img_position = 0;
