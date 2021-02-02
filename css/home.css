@@ -127,32 +127,6 @@ body {
     border-bottom: 1px solid gray;
 }
 
-/* CONTACT */
-
-.contact {
-    height: 400px;
-    grid-area: contact;
-    background-color: #DCDFE2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact-item,
-.contact-title {
-    position: relative;
-}
-
-.contact-title { top: -5%; }
-
-.contact-item {
-    top: 5%;
-    padding: 15px;
-}
-
-.contact-item { color: #47525E; }
-
 @media (min-width: 950px) {
     /* PRESENTATION */
 
